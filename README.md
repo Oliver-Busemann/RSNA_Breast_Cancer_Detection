@@ -7,3 +7,5 @@ https://www.kaggle.com/competitions/rsna-breast-cancer-detection
 ### Notebooks:
 
 #### 1) Data Exploration [RSNA_Notebook_1_Data_Exploration.ipynb]
+  -> Analyse & visualize the provided scans
+  -> Analyse & visualize the additional information available
