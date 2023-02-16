@@ -11,7 +11,8 @@ https://www.kaggle.com/competitions/rsna-breast-cancer-detection
   -> Analyse & visualize the additional information available<br>
 #### 2) Preprocessing [RSNA_Notebook_2_Preprocessing.ipynb]
   -> There was a huge bottleneck with loading the data to the gpu (gpu util only ~3%)<br>
-  -> The big scans are preprocessed to a much smaller size (512x512) and saved using pickle<br>
+  -> The big scans are preprocessed & resized to a much smaller size of (512x512 -> ~50 times smaller) and saved using pickle<br>
+  -> This fixed the bottleneck and made gpu-util 100%<br>
 #### 3) Training [RSNA_Notebook_3_Training.ipynb]
   -> For training a cv-setup was created: each fold should contain roughly the same number of cancer targets<br>
   -> The scans are augmented based on recommendation in paper<br>
