@@ -27,7 +27,7 @@ https://www.kaggle.com/competitions/rsna-breast-cancer-detection
   -> Dataloader were created<br>
   -> For each train-/valid-dataloader a model was created (correct: random initial weights loaded) and trained/evaluated for 13 epochs<br>
   -> The learning rate was reduced if valid_loss didnt decrease for 3 epochs<br>
-  -> After training of each model (1 for each cv-setup) the weights were saved & the metrics from evaluation were appended to a df & written to a csv<br>
+  -> After training of each model (1 for each cv-setup) the weights were saved & the metrics from evaluation were added to a df & written to a csv<br>
   -> When each model was trained, the results were plotted<br>
   -> They showed a reduction in loss & pF1 but they could be trained longer (didnt fully converge yet)<br>
   -> Mean pF1-score was really low because it is 0 for a batch when there is no cancer case<br>
